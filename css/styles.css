@@ -1,0 +1,369 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 0;
+}
+
+nav, main, footer {
+    padding: 0 10rem;
+}
+
+header {
+    height: 30vh;
+    background: url(../images/manycabinets.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%
+}
+
+.top-nav {
+    display: flex;
+    justify-content: right;
+    height: 30px;
+    background-color: #101010;
+    padding: .7rem 2.5rem 1.6rem .5rem;
+}
+
+.top-nav > div > a {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+
+.top-nav > div > a:hover {
+    color: dodgerblue;
+}
+
+
+a {
+    text-decoration: none;
+    color: hotpink;
+}
+
+.logo-block {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    width: 15%;
+
+}
+
+.company-name {
+    font-size: 3rem;
+    padding-right: 3rem;
+    margin: 0;
+}
+
+#logo {
+    width: 300px;
+    height: 300px;
+    /* width: 100%;
+    height: 100%;
+    object-fit: contain; */
+}
+
+nav {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 1.5rem 3rem 4rem 0;
+    justify-content: right;
+    color: hotpink;
+}
+
+.dropdown {
+    position: relative;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+
+.dropdown > ul {
+    width: 125px;
+    display: none;
+    position: absolute;
+    padding: 0 0 0 0;
+    margin-top: 0;
+    background-color: rgb(45, 45, 45);
+    color: aliceblue;
+    list-style-type: none;
+}
+
+.dropdown > ul > li {
+    text-decoration: none;
+    padding: .3rem 0 .5rem .9rem;;
+}
+
+.dropdown:hover > ul {
+    display: block;
+} 
+
+.dropdown > ul > li:hover {
+    background-color: dodgerblue;
+}
+
+
+.purchase-section {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.gallery {
+    display: flex;
+    flex-shrink: 0;
+    width: 65%;
+}
+
+.pic-column {
+    width: 15%;
+    padding-top: 5rem;
+}
+
+.pic-column > img {
+    display: block;
+    width: 60%;
+    height: 20%;
+    object-fit: cover;
+    margin: 0 auto 1rem auto;
+    border-radius: 5%;
+}
+
+.pic-column > img:hover {
+    border-width: 2px;
+    border: 3px solid rgb(255, 221, 0);
+}
+
+
+.big-picture {
+    width: 75%;
+    height: 690px;
+    margin: 0;
+}
+
+.big-picture > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.buy-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+h1 {
+    letter-spacing: .3rem;
+    font-size: 6rem;
+    text-align: center;
+    margin: 0 0;
+}
+
+.buy-info > form {
+    width: 100%;
+}
+
+.amount-select {
+    text-align: center;
+}
+
+#quantity {
+    font-size: 2rem;
+    padding-right: .5rem;
+}
+
+#quantity-button {
+    width: 4.4rem;
+    height: 2.4rem;
+    font-size: 2rem;
+}
+
+#price {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+
+#buy-now {
+    margin: 2rem auto;
+    width: 100%;
+    height: 5rem;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(199, 8, 8);
+    color: whitesmoke;
+    border-radius: 30px;
+}
+
+#buy-now:hover {
+    background-color: rgb(142, 12, 12);
+}
+
+section {
+    margin-top: 6rem;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+
+.question-box {
+    width: 50%;
+}
+
+.question-box > form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border: 1px solid slategray;
+    }
+
+.text-input {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+}
+
+.text-input > p {
+    font-size: 2rem;
+}
+
+.text-input > input {
+    display: block;
+}
+
+.form-buttons {
+    padding-bottom: 1rem;
+}
+
+#name{
+    display: inline;
+}
+
+#question-submit {
+    display: block;
+    margin: 1rem auto;
+    background-color: dodgerblue;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+#question-submit:hover {
+    background-color: rgb(23, 98, 174);
+}
+
+
+#remember{
+    display: inline-block;
+}
+
+.name, .email, .text-area {
+    padding: .5rem;
+    margin-bottom: .5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color .15s, box-shadow .15s;
+}
+
+.name:focus, .email:focus, .text-area:focus {
+    outline: 0;
+    border-color: hotpink;
+    box-shadow: 0 0 0 4px hotpink;
+}
+
+.vid-and-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    width: 500px;
+    height: 315px;
+}
+
+.video{
+    margin: 0 auto
+}
+
+.item-info {
+    margin: 1rem auto;
+    width: 80%;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.item-info > p {
+    margin-bottom: 0;
+}
+
+.list-wrapper {
+    text-align: center;
+}
+
+.feature-list {
+    display: inline-block;
+    line-height: 2;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(133, 146, 160);
+    margin-top: 11rem;
+}
+
+.option {
+    list-style-type: none;
+}
+
+.footer-links {
+    column-count: 3;
+    column-gap: 4rem;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+    padding: 0 0 0 0;
+}
+
+.footer-links > li > a {
+    color: slategray;
+}
+
+.small-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.small-logo > p {
+    margin: auto 0;
+}
+

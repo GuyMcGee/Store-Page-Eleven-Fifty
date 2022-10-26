@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4f512a7cc2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Eleven Fifty Static Store Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <div class="logo-block">
+          <a href="#top">
+          <img id="logo" src="images/Arcade logo.jpg" alt="Company Logo" />
+          </a>
+        </div>
+        <div class="top-nav">
+          <div>
+            <a href="#"><i class="fa-solid fa-door-open"></i> Sign In</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> View Cart</a>
+            <select name="" id="currency-option" onchange="convertCurrency()">
+              <option value="1">USD &dollar;</option>
+              <option value="146.31">YEN &yen;</option>
+              <option value="1.01">EUR &euro;</option>
+              <option value="1.16">GBP &pound;</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="dropdown">
+        <span><a href="#">Our Cabinets</a></span>
+        <ul>
+          <li><a href="#">lorem</a></li>
+          <li><a href="#">lorem</a></li>
+          <li><a href="#">lorem</a></li>
+          <li><a href="#">lorem</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <span><a href="#">Custom Orders</a></span>
+        <ul>
+          <li><a href="">lorem</a></li>
+          <li><a href="">lorem</a></li>
+          <li><a href="">lorem</a></li>
+          <li><a href="">lorem</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <span><a href="#">Accessories</a></span>
+        <ul>
+          <li><a href="">lorem</a></li>
+          <li><a href="">lorem</a></li>
+          <li><a href="">lorem</a></li>
+          <li><a href="">lorem</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <span><a href="#">Repairs</a></span>
+        <ul>
+          <li><a href="">lorem</a></li>
+          <li><a href="">lorem</a></li>
+          <li><a href="">lorem</a></li>
+          <li><a href="">lorem</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="purchase-section">
+        <div class="gallery">
+          <div id="pic-column" class="pic-column">
+            <img
+              src="images/Cabinet main.jpg"
+              alt="Arade Cabinet in Game Room"
+            />
+            <img
+              src="images/cabinet front.jpg"
+              alt="Front View of Arcade Cabinet"
+            />
+            <img
+              src="images/Cabinet left.jpg"
+              alt="Left View of Arcade Cabinet"
+            />
+            <img
+              src="images/cabinet right.jpg"
+              alt="Right View of Arcade Cabinet"
+            />
+          </div>
+          <figure class="big-picture">
+            <img id="big-picture-img" src="images/Cabinet main.jpg" alt="" />
+          </figure>
+        </div>
+        <div class="buy-info">
+          <h1>STREET FIGHTER&nbspII CABINET</h1>
+          <form>
+            <div class="amount-select">
+              <p id="price">$599.99</p>
+              <div>
+                <span id="quantity">Quantity</span>
+                <input id="quantity-button" type="number" min="1" value="1" />
+              </div>
+            </div>
+            <input id="buy-now" type="submit" value="Buy Now" />
+          </form>
+        </div>
+      </div>
+      <section>
+        <div class="info-section">
+          <div class="question-box">
+            <form>
+              <div class="text-input">
+                <p>Questions?</p>
+                <input class="name" type="text" placeholder="*Name" />
+                <input class="email" type="email" placeholder="*E-mail" />
+                <textarea class="text-area"
+                  type="textarea"
+                  placeholder="Type question here"
+                  maxlength="200"
+                ></textarea>
+              </div>
+              <div class="form-buttons">
+                <div class="remember-wrapper">
+                  <input type="checkbox" id="name" />
+                  <span id="remember">Remember Me</span>
+                </div>
+                <input id="question-submit" type="submit" />
+              </div>
+            </div>
+            </form>
+          <div class="vid-and-text">
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/trm2jMxqzKs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="item-info">
+              <p>
+                This Street Fighter II arcade cabinet is the consectetur goble
+                adipisicing elit. Ipsum itaque aspernatur, velit consectetur
+                placeat blanditiis animi nihil officiis optio sit aperiam.
+                Tenetur unde nam, ducimus in, deleniti eligendi reprehenderit
+                vel quod iure soluta expedita itaque dolorem laudantium eaque
+                aliquam aut nemo et! Qui facilis iste maioress, consectetur
+                voluptatibus aperiam impedit necessitatibus rem vel perspiciatis
+                incidunt quod doloremque velit aliquam. Provident quos
+                dignissimos ex ducimus! Eligendi dolor quos totam debitis quia
+                static store page assignment for Eleven Fifty by Adam Lair.
+              </p>
+              <div class="list-wrapper">
+                <ul class="feature-list">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+              </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>
+        <ul class= footer-links>
+          <li class="option"><a href="#top">Contact</a></li>
+          <li class="option"><a href="#top">Careers</a></li>
+          <li class="option"><a href="#top">Press Center</a></li>
+          <li class="option"><a href="#top">Franchise</a></li>
+          <li class="option"><a href="#top">Rewards</a></li>
+          <li class="option"><a href="#top">Gift Cards</a></li>
+          <li class="option"><a href="#top">Members</a></li>
+          <li class="option"><a href="#top">Your Orders</a></li>
+          <li class="option"><a href="#top">FAQ</a></li>
+          <li class="option"><a href="#top">Legal</a></li>
+          <li class="option"><a href="#top">Returns</a></li>
+          <li class="option"><a href="#top">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <span>Game Room Arcade &copy2022</span>
+      <a href="#top">
+        <img class="small-logo" src="images/Arcade logo.jpg" alt="Company Logo" />
+      </a>
+    </footer>
+  </body>
+  <script src="js/app.js"></script>
+</html>
